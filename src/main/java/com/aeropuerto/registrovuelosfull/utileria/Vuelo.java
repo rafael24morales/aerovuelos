@@ -14,7 +14,7 @@ import javax.persistence.*;
 public class Vuelo {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_vuelo;
+    private int idVuelo;
 
     @Column
     private String aeropuerto;
@@ -25,5 +25,7 @@ public class Vuelo {
     @Column
     private String ruta;
 
-
+    public Vuelo(int idVuelo) {
+        this.idVuelo = idVuelo;
+    }
 }

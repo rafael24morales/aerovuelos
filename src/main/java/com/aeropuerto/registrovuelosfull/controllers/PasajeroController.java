@@ -17,9 +17,9 @@ public class PasajeroController {
     PasajeroDao pasajeroDao;
 
 
-    @RequestMapping(value="/pasajeros", method = RequestMethod.GET)
+   /* @RequestMapping(value="/pasajeros", method = RequestMethod.GET)
     public List<Pasajero> getPasajeros(){
         return pasajeroDao.findAllPasajeros();
-    }
+    }*/
 
 }
