@@ -13,9 +13,8 @@ public class PasajeroDao {
     @Autowired
     IPasajeroRepository iPasajeroRepository;
 
-   /* public List<Pasajero> findAllPasajeros(){
+    public List<Pasajero> findAllPasajeros(){
         return iPasajeroRepository.findAll();
     }
-*/
 
 }

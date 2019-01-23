@@ -25,9 +25,11 @@ public class VueloPasajeroController {
         return vueloPasajeroDao.postPasajero(id_vuelo,pasajero);
     }
 
-    @GetMapping("/vuelos/{id_vuelo}/pasajeros/{id_pasajero}")
-    public Pasajero getUnPasajeroDeVuelo(){
-        return null;
+    @GetMapping("/vuelos/{id_vuelo}/pasajeros/{asiento}")
+    public Pasajero getUnPasajeroDeVuelo(
+            @PathVariable Integer id_vuelo,
+            @PathVariable String asiento){
+        return vueloPasajeroDao.pasajeroPorId(id_vuelo,asiento);
     }
 
     @GetMapping("/vuelos/{id_vuelo}/pasajeros")

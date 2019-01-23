@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface IPasajeroRepository extends JpaRepository<Pasajero,Integer> {
         List<Pasajero> findByVuelo_IdVuelo(Integer vuelo_id);
+        Pasajero findByVuelo_IdVueloAndAsiento(Integer vuelo_id , String asiento);
 }

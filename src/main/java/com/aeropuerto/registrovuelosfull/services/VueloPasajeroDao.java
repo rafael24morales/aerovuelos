@@ -24,4 +24,8 @@ public class VueloPasajeroDao {
     public List<Pasajero> pasajerosPorVuelo(Integer vuelo_Id) {
         return iPasajeroRepository.findByVuelo_IdVuelo(vuelo_Id);
     }
+
+    public Pasajero pasajeroPorId(Integer vuelo_id , String asiento){
+        return iPasajeroRepository.findByVuelo_IdVueloAndAsiento(vuelo_id,asiento);
+    }
 }
